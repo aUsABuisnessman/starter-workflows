@@ -2,14 +2,14 @@ name: Android CI
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ $labels ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ $labels ]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04.2
 
     steps:
     - uses: actions/checkout@v4
